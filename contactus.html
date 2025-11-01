@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Al-Qur'an</title>
+    <link rel="stylesheet" href="pages-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <div class="logo">
+            <p class="name">Al-Qur'an</p>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <section class="content-section">
+            <h1 class="page-title">Contact Us</h1>
+            
+            <div class="content-card">
+                <p class="intro-text">We'd love to hear from you! Whether you have questions, suggestions, or need support, feel free to reach out.</p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>support@alquran.com</p>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Location</h3>
+                    <p>Abuja, FCT, Nigeria</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/94c0a930ff.js" crossorigin="anonymous"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Al-Qur'an</title>
+    <link rel="stylesheet" href="auth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">☪️</span>
+                <p class="name">Al-Qur'an</p>
+            </a>
+        </header>
+
+        <section class="auth-container">
+            <div class="auth-box">
+                <h1 class="auth-title">Welcome Back</h1>
+                <p class="auth-subtitle">Sign in to continue your journey</p>
+
+                <form class="auth-form" id="signinForm">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            placeholder="Enter your password"
+                            required>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="auth-button">Sign In</button>
+                </form>
+
+                <div class="divider">
+                    <span>or</span>
+                </div>
+
+                <p class="switch-auth">
+                    Don't have an account? 
+                    <a href="signup.html">Sign Up</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="auth.js"></script>
+</body>
+</html>

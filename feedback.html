@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Al-Qur'an</title>
+    <link rel="stylesheet" href="pages-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <div class="logo">
+            <p class="name">Al-Qur'an</p>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <section class="content-section">
+            <h1 class="page-title">Your Feedback Matters</h1>
+            
+            <div class="content-card">
+                <p class="intro-text">Help us improve your Qur'an reading experience. Share your thoughts, report issues, or suggest new features.</p>
+            </div>
+
+            <form class="contact-form" id="feedbackForm">
+                <div class="form-group">
+                    <label for="feedback-name">Name (Optional)</label>
+                    <input type="text" id="feedback-name" name="name" placeholder="Anonymous">
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback-email">Email (Optional)</label>
+                    <input type="email" id="feedback-email" name="email" placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback-type">Feedback Type</label>
+                    <select id="feedback-type" name="type" required>
+                        <option value="">Select type</option>
+                        <option value="bug">Bug Report</option>
+                        <option value="feature">Feature Request</option>
+                        <option value="improvement">Improvement Suggestion</option>
+                        <option value="compliment">Compliment</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Overall Experience</label>
+                    <div class="rating-container">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5"><i class="fa-solid fa-star"></i></label>
+                        
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4"><i class="fa-solid fa-star"></i></label>
+                        
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3"><i class="fa-solid fa-star"></i></label>
+                        
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2"><i class="fa-solid fa-star"></i></label>
+                        
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1"><i class="fa-solid fa-star"></i></label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback-message">Your Feedback</label>
+                    <textarea id="feedback-message" name="message" rows="6" required placeholder="Tell us what you think..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/94c0a930ff.js" crossorigin="anonymous"></script>
+    <script src="feedback.js"></script>
+</body>
+</html>

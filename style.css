@@ -343,7 +343,6 @@ body.sidebar-open {
     }
     
     .surah-box {
-        flex-direction: column;
         text-align: center;
         gap: 0.5rem;
     }
@@ -363,4 +362,5 @@ body.sidebar-open {
     .surah-list {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }

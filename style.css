@@ -335,7 +335,7 @@ body.sidebar-open {
 /* Responsive Design */
 @media (max-width: 480px) {
     .sidebar {
-        width: 40%;
+        width: 50%;
     }
     
     .surah-list {
@@ -364,4 +364,5 @@ body.sidebar-open {
     }
 
 }
+
 

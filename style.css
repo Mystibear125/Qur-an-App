@@ -332,6 +332,11 @@ body.sidebar-open {
     color: var(--cornsilk);
 }
 
+/* Refresh Page */
+.refresh-page{
+    color: var(--earth-yellow);
+}
+
 /* Responsive Design */
 @media (max-width: 480px) {
     .sidebar {
@@ -364,5 +369,6 @@ body.sidebar-open {
     }
 
 }
+
 
 

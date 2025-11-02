@@ -49,6 +49,7 @@ function displayError() {
     surahList.innerHTML = `
         <div style="color: #f9f7e8; padding: 2rem; text-align: center; grid-column: 1/-1;">
             <p>Failed to load surahs. Please check your internet connection and try again.</p>
+            <a class="refresh-page" href="index.html">Refresh</a>
         </div>
     `;
 }
@@ -91,4 +92,5 @@ function createSurahBox(surah, number) {
 }
 
 fetchSurahs();
+
 setupSearch();

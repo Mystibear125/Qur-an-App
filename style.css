@@ -111,6 +111,7 @@ header {
 
 .fa-bars:hover {
     color: var(--dark-moss-green);
+    transform: translateX(-10%);
 }
 
 .fa-bars.active {
@@ -369,6 +370,7 @@ body.sidebar-open {
     }
 
 }
+
 
 
 

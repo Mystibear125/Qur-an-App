@@ -81,37 +81,3 @@ if (signupForm) {
         window.location.href = 'index.html';
     });
 }
-
-// Password visibility toggle
-function addPasswordToggle() {
-    const passwordInputs = document.querySelectorAll('input[type="password"]');
-    
-    passwordInputs.forEach(input => {
-        const wrapper = input.parentElement;
-        
-        // Add toggle button
-        const toggleBtn = document.createElement('button');
-        toggleBtn.type = 'button';
-        toggleBtn.textContent = '👁️';
-        toggleBtn.style.cssText = `
-            position: absolute;
-            right: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 1.2rem;
-        `;
-        
-        toggleBtn.addEventListener('click', () => {
-            if (input.type === 'password') {
-                input.type = 'text';
-                toggleBtn.textContent = '👁️‍🗨️';
-            } else {
-                input.type = 'password';
-                toggleBtn.textContent = '👁️';
-            }
-        });
-    });
-}
